@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin CDGplace</title>
+</head>
+<body>
+  <h2>Admin CDGplace</h2>
+  <p>Pour reset le canvas, ajoute `?pass=TON_MOT_DE_PASSE` à l'URL.</p>
+  <button id="reset">Reset Canvas</button>
+
+  <script>
+    const ADMIN_PASSWORD = 'chucknorris'; // remplace par ton mot de passe
+
+    document.getElementById('reset').addEventListener('click', () => {
+      fetch(`/reset?pass=${ADMIN_PASSWORD}`, { method: 'POST' })
+        .then(() => alert('Canvas reset !'))
+        .catch(err => alert('Erreur : ' + err));
+    });
+  </script>
+</body>
+</html>
