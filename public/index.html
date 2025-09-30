@@ -118,11 +118,7 @@ const GRID_W = Math.floor(VIRTUAL_W / PIXEL_SIZE);   // nombre de cellules en x
 const GRID_H = Math.floor(VIRTUAL_H / PIXEL_SIZE);   // nombre de cellules en y
 // NOTE: canvas.width must equal GRID_W*PIXEL_SIZE and canvas.height = GRID_H*PIXEL_SIZE
 // Ici on set canvas to 500x250 (125*4 = 500, 62*4 = 248 ≈ 250 — OK practical)
-const colors = [
-  "#FFFFFF", "#000000", "#808080", "#DC3545", "#FD7E14",
-  "#FFC107", "#28A745", "#007BFF", "#17A2B8", "#6F42C1",
-  "#E83E8C", "#8B4513", "#F5F5DC", "#FFFFF0", "#FFD700"
-];
+const COLORS = ['#ffffff','#000000','#808080','#dc3545','#fd7e14','#ffc107','#28a745','#007bff','#17a2b8','#6f42c1','#e83e8c','#8b4513','#f5f5dc','#fffff0','#ffd700'];
 
 /* === DOM === */
 const canvas = document.getElementById('canvas');
